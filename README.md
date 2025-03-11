@@ -33,7 +33,7 @@ PokemonTrainerCard/
 ## Como Executar
 1. **Clone o repositório**
    ```sh
-   git clone https://github.com/seu-usuario/PokemonTrainerCard.git
+   git clone https://github.com/Viihctor/Trainer-card-Maker.git
    ```
 2. **Abra o projeto no NetBeans**
 3. **Compile e execute a classe principal** (`PokemonTrainerCard.java`)
