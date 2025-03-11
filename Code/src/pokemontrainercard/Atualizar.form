@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+      <Color id="Cursor Padr&#xe3;o"/>
+    </Property>
+    <Property name="iconImages" type="java.util.List" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="null"/>
+    </Property>
+    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1024, 640]"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
+    <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1024, 640]"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-4,0,0,4,70"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="true"/>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="btnCriar">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="66" red="ff" type="rgb"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/PokeballIcon/levelball.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCriarActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="700" y="350" width="200" height="140"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Times New Roman" size="24" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Nome do Treinador:"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="50" y="80" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="clickableLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Times New Roman" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Voltar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="clickableLabelMouseClicked"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="10" y="10" width="80" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JPasswordField" name="txtSenha">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="280" y="120" width="180" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNome">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Times New Roman" size="12" style="1"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="280" y="80" width="180" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="boxCardCollor">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Times New Roman" size="12" style="1"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Vermelho"/>
+            <StringItem index="1" value="Azul"/>
+            <StringItem index="2" value="Verde"/>
+            <StringItem index="3" value="Preto"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boxCardCollorActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="700" y="120" width="180" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Times New Roman" size="24" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cor do seu Cart&#xe3;o:"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="470" y="120" width="220" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Times New Roman" size="24" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Senha:"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="50" y="120" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Times New Roman" size="24" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Classe do Treinador:"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="470" y="80" width="220" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="classeTreinador">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Times New Roman" size="12" style="1"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="Lucas"/>
+            <StringItem index="1" value="Dawn"/>
+            <StringItem index="2" value="Barry"/>
+            <StringItem index="3" value="Nate"/>
+            <StringItem index="4" value="Hilda"/>
+            <StringItem index="5" value="Bianca"/>
+            <StringItem index="6" value="Cheren"/>
+            <StringItem index="7" value="Sun"/>
+            <StringItem index="8" value="Moon"/>
+            <StringItem index="9" value="Kiawe"/>
+            <StringItem index="10" value="Giovanni"/>
+            <StringItem index="11" value="May"/>
+            <StringItem index="12" value="Silver"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="classeTreinadorActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="700" y="80" width="180" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Times New Roman" size="48" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Imagens/Pika.gif"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Escolha seus Pok&#xe9;mon:"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="10" y="130" width="780" height="210"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="poke1">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="165">
+            <StringItem index="0" value="------x------"/>
+            <StringItem index="1" value="Eevee"/>
+            <StringItem index="2" value="Vaporeon"/>
+            <StringItem index="3" value="Jolteon"/>
+            <StringItem index="4" value="Flareon"/>
+            <StringItem index="5" value="Espeon"/>
+            <StringItem index="6" value="Umbreon"/>
+            <StringItem index="7" value="Leafeon"/>
+            <StringItem index="8" value="Glaceon"/>
+            <StringItem index="9" value="Sylveon"/>
+            <StringItem index="10" value="Snivy"/>
+            <StringItem index="11" value="Servine"/>
+            <StringItem index="12" value="Serperior"/>
+            <StringItem index="13" value="Tepig"/>
+            <StringItem index="14" value="Pignite"/>
+            <StringItem index="15" value="Emboar"/>
+            <StringItem index="16" value="Oshawott"/>
+            <StringItem index="17" value="Dewott"/>
+            <StringItem index="18" value="Samurott"/>
+            <StringItem index="19" value="Patrat"/>
+            <StringItem index="20" value="Watchog"/>
+            <StringItem index="21" value="Lillipup"/>
+            <StringItem index="22" value="Herdier"/>
+            <StringItem index="23" value="Stoutland"/>
+            <StringItem index="24" value="Purrloin"/>
+            <StringItem index="25" value="Liepard"/>
+            <StringItem index="26" value="Pansage"/>
+            <StringItem index="27" value="Simisage"/>
+            <StringItem index="28" value="Pansear"/>
+            <StringItem index="29" value="Simisear"/>
+            <StringItem index="30" value="Panpour"/>
+            <StringItem index="31" value="Simipour"/>
+            <StringItem index="32" value="Munna"/>
+            <StringItem index="33" value="Musharna"/>
+            <StringItem index="34" value="Pidove"/>
+            <StringItem index="35" value="Tranquill"/>
+            <StringItem index="36" value="Unfezant"/>
+            <StringItem index="37" value="Blitzle"/>
+            <StringItem index="38" value="Zebstrika"/>
+            <StringItem index="39" value="Roggenrola"/>
+            <StringItem index="40" value="Boldore"/>
+            <StringItem index="41" value="Gigalith"/>
+            <StringItem index="42" value="Woobat"/>
+            <StringItem index="43" value="Swoobat"/>
+            <StringItem index="44" value="Drilbur"/>
+            <StringItem index="45" value="Excadrill"/>
+            <StringItem index="46" value="Audino"/>
+            <StringItem index="47" value="Timburr"/>
+            <StringItem index="48" value="Gurdurr"/>
+            <StringItem index="49" value="Conkeldurr"/>
+            <StringItem index="50" value="Tympole"/>
+            <StringItem index="51" value="Palpitoad"/>
+            <StringItem index="52" value="Seismitoad"/>
+            <StringItem index="53" value="Throh"/>
+            <StringItem index="54" value="Sawk"/>
+            <StringItem index="55" value="Sewaddle"/>
+            <StringItem index="56" value="Swadloon"/>
+            <StringItem index="57" value="Leavanny"/>
+            <StringItem index="58" value="Venipede"/>
+            <StringItem index="59" value="Whirlipede"/>
+            <StringItem index="60" value="Scolipede"/>
+            <StringItem index="61" value="Cottonee"/>
+            <StringItem index="62" value="Whimsicott"/>
+            <StringItem index="63" value="Petilil"/>
+            <StringItem index="64" value="Lilligant"/>
+            <StringItem index="65" value="Basculin"/>
+            <StringItem index="66" value="Sandile"/>
+            <StringItem index="67" value="Krokorok"/>
+            <StringItem index="68" value="Krookodile"/>
+            <StringItem index="69" value="Darumaka"/>
+            <StringItem index="70" value="Darmanitan"/>
+            <StringItem index="71" value="Maractus"/>
+            <StringItem index="72" value="Dwebble"/>
+            <StringItem index="73" value="Crustle"/>
+            <StringItem index="74" value="Scraggy"/>
+            <StringItem index="75" value="Scrafty"/>
+            <StringItem index="76" value="Sigilyph"/>
+            <StringItem index="77" value="Yamask"/>
+            <StringItem index="78" value="Cofagrigus"/>
+            <StringItem index="79" value="Tirtouga"/>
+            <StringItem index="80" value="Carracosta"/>
+            <StringItem index="81" value="Archen"/>
+            <StringItem index="82" value="Archeops"/>
+            <StringItem index="83" value="Trubbish"/>
+            <StringItem index="84" value="Garbodor"/>
+            <StringItem index="85" value="Zorua"/>
+            <StringItem index="86" value="Zoroark"/>
+            <StringItem index="87" value="Minccino"/>
+            <StringItem index="88" value="Cinccino"/>
+            <StringItem index="89" value="Gothita"/>
+            <StringItem index="90" value="Gothorita"/>
+            <StringItem index="91" value="Gothitelle"/>
+            <StringItem index="92" value="Solosis"/>
+            <StringItem index="93" value="Duosion"/>
+            <StringItem index="94" value="Reuniclus"/>
+            <StringItem index="95" value="Ducklett"/>
+            <StringItem index="96" value="Swanna"/>
+            <StringItem index="97" value="Vanillite"/>
+            <StringItem index="98" value="Vanillish"/>
+            <StringItem index="99" value="Vanilluxe"/>
+            <StringItem index="100" value="Deerling"/>
+            <StringItem index="101" value="Sawsbuck"/>
+            <StringItem index="102" value="Emolga"/>
+            <StringItem index="103" value="Karrablast"/>
+            <StringItem index="104" value="Escavalier"/>
+            <StringItem index="105" value="Foongus"/>
+            <StringItem index="106" value="Amoonguss"/>
+            <StringItem index="107" value="Frillish"/>
+            <StringItem index="108" value="Jellicent"/>
+            <StringItem index="109" value="Alomomola"/>
+            <StringItem index="110" value="Joltik"/>
+            <StringItem index="111" value="Galvantula"/>
+            <StringItem index="112" value="Ferroseed"/>
+            <StringItem index="113" value="Ferrothorn"/>
+            <StringItem index="114" value="Klink"/>
+            <StringItem index="115" value="Klang"/>
+            <StringItem index="116" value="Klinklang"/>
+            <StringItem index="117" value="Tynamo"/>
+            <StringItem index="118" value="Eelektrik"/>
+            <StringItem index="119" value="Eelektross"/>
+            <StringItem index="120" value="Elgyem"/>
+            <StringItem index="121" value="Beheeyem"/>
+            <StringItem index="122" value="Litwick"/>
+            <StringItem index="123" value="Lampent"/>
+            <StringItem index="124" value="Chandelure"/>
+            <StringItem index="125" value="Axew"/>
+            <StringItem index="126" value="Fraxure"/>
+            <StringItem index="127" value="Haxorus"/>
+            <StringItem index="128" value="Cubchoo"/>
+            <StringItem index="129" value="Beartic"/>
+            <StringItem index="130" value="Cryogonal"/>
+            <StringItem index="131" value="Shelmet"/>
+            <StringItem index="132" value="Accelgor"/>
+            <StringItem index="133" value="Stunfisk"/>
+            <StringItem index="134" value="Mienfoo"/>
+            <StringItem index="135" value="Mienshao"/>
+            <StringItem index="136" value="Druddigon"/>
+            <StringItem index="137" value="Golett"/>
+            <StringItem index="138" value="Golurk"/>
+            <StringItem index="139" value="Pawniard"/>
+            <StringItem index="140" value="Bisharp"/>
+            <StringItem index="141" value="Bouffalant"/>
+            <StringItem index="142" value="Rufflet"/>
+            <StringItem index="143" value="Braviary"/>
+            <StringItem index="144" value="Vullaby"/>
+            <StringItem index="145" value="Mandibuzz"/>
+            <StringItem index="146" value="Heatmor"/>
+            <StringItem index="147" value="Durant"/>
+            <StringItem index="148" value="Deino"/>
+            <StringItem index="149" value="Zweilous"/>
+            <StringItem index="150" value="Hydreigon"/>
+            <StringItem index="151" value="Larvesta"/>
+            <StringItem index="152" value="Volcarona"/>
+            <StringItem index="153" value="Cobalion"/>
+            <StringItem index="154" value="Terrakion"/>
+            <StringItem index="155" value="Virizion"/>
+            <StringItem index="156" value="Tornadus"/>
+            <StringItem index="157" value="Thundurus"/>
+            <StringItem index="158" value="Reshiram"/>
+            <StringItem index="159" value="Zekrom"/>
+            <StringItem index="160" value="Landorus"/>
+            <StringItem index="161" value="Kyurem"/>
+            <StringItem index="162" value="Keldeo"/>
+            <StringItem index="163" value="Meloetta"/>
+            <StringItem index="164" value="Genesect"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="110" y="350" width="120" height="40"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="poke2">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="165">
+            <StringItem index="0" value="------x------"/>
+            <StringItem index="1" value="Eevee"/>
+            <StringItem index="2" value="Vaporeon"/>
+            <StringItem index="3" value="Jolteon"/>
+            <StringItem index="4" value="Flareon"/>
+            <StringItem index="5" value="Espeon"/>
+            <StringItem index="6" value="Umbreon"/>
+            <StringItem index="7" value="Leafeon"/>
+            <StringItem index="8" value="Glaceon"/>
+            <StringItem index="9" value="Sylveon"/>
+            <StringItem index="10" value="Snivy"/>
+            <StringItem index="11" value="Servine"/>
+            <StringItem index="12" value="Serperior"/>
+            <StringItem index="13" value="Tepig"/>
+            <StringItem index="14" value="Pignite"/>
+            <StringItem index="15" value="Emboar"/>
+            <StringItem index="16" value="Oshawott"/>
+            <StringItem index="17" value="Dewott"/>
+            <StringItem index="18" value="Samurott"/>
+            <StringItem index="19" value="Patrat"/>
+            <StringItem index="20" value="Watchog"/>
+            <StringItem index="21" value="Lillipup"/>
+            <StringItem index="22" value="Herdier"/>
+            <StringItem index="23" value="Stoutland"/>
+            <StringItem index="24" value="Purrloin"/>
+            <StringItem index="25" value="Liepard"/>
+            <StringItem index="26" value="Pansage"/>
+            <StringItem index="27" value="Simisage"/>
+            <StringItem index="28" value="Pansear"/>
+            <StringItem index="29" value="Simisear"/>
+            <StringItem index="30" value="Panpour"/>
+            <StringItem index="31" value="Simipour"/>
+            <StringItem index="32" value="Munna"/>
+            <StringItem index="33" value="Musharna"/>
+            <StringItem index="34" value="Pidove"/>
+            <StringItem index="35" value="Tranquill"/>
+            <StringItem index="36" value="Unfezant"/>
+            <StringItem index="37" value="Blitzle"/>
+            <StringItem index="38" value="Zebstrika"/>
+            <StringItem index="39" value="Roggenrola"/>
+            <StringItem index="40" value="Boldore"/>
+            <StringItem index="41" value="Gigalith"/>
+            <StringItem index="42" value="Woobat"/>
+            <StringItem index="43" value="Swoobat"/>
+            <StringItem index="44" value="Drilbur"/>
+            <StringItem index="45" value="Excadrill"/>
+            <StringItem index="46" value="Audino"/>
+            <StringItem index="47" value="Timburr"/>
+            <StringItem index="48" value="Gurdurr"/>
+            <StringItem index="49" value="Conkeldurr"/>
+            <StringItem index="50" value="Tympole"/>
+            <StringItem index="51" value="Palpitoad"/>
+            <StringItem index="52" value="Seismitoad"/>
+            <StringItem index="53" value="Throh"/>
+            <StringItem index="54" value="Sawk"/>
+            <StringItem index="55" value="Sewaddle"/>
+            <StringItem index="56" value="Swadloon"/>
+            <StringItem index="57" value="Leavanny"/>
+            <StringItem index="58" value="Venipede"/>
+            <StringItem index="59" value="Whirlipede"/>
+            <StringItem index="60" value="Scolipede"/>
+            <StringItem index="61" value="Cottonee"/>
+            <StringItem index="62" value="Whimsicott"/>
+            <StringItem index="63" value="Petilil"/>
+            <StringItem index="64" value="Lilligant"/>
+            <StringItem index="65" value="Basculin"/>
+            <StringItem index="66" value="Sandile"/>
+            <StringItem index="67" value="Krokorok"/>
+            <StringItem index="68" value="Krookodile"/>
+            <StringItem index="69" value="Darumaka"/>
+            <StringItem index="70" value="Darmanitan"/>
+            <StringItem index="71" value="Maractus"/>
+            <StringItem index="72" value="Dwebble"/>
+            <StringItem index="73" value="Crustle"/>
+            <StringItem index="74" value="Scraggy"/>
+            <StringItem index="75" value="Scrafty"/>
+            <StringItem index="76" value="Sigilyph"/>
+            <StringItem index="77" value="Yamask"/>
+            <StringItem index="78" value="Cofagrigus"/>
+            <StringItem index="79" value="Tirtouga"/>
+            <StringItem index="80" value="Carracosta"/>
+            <StringItem index="81" value="Archen"/>
+            <StringItem index="82" value="Archeops"/>
+            <StringItem index="83" value="Trubbish"/>
+            <StringItem index="84" value="Garbodor"/>
+            <StringItem index="85" value="Zorua"/>
+            <StringItem index="86" value="Zoroark"/>
+            <StringItem index="87" value="Minccino"/>
+            <StringItem index="88" value="Cinccino"/>
+            <StringItem index="89" value="Gothita"/>
+            <StringItem index="90" value="Gothorita"/>
+            <StringItem index="91" value="Gothitelle"/>
+            <StringItem index="92" value="Solosis"/>
+            <StringItem index="93" value="Duosion"/>
+            <StringItem index="94" value="Reuniclus"/>
+            <StringItem index="95" value="Ducklett"/>
+            <StringItem index="96" value="Swanna"/>
+            <StringItem index="97" value="Vanillite"/>
+            <StringItem index="98" value="Vanillish"/>
+            <StringItem index="99" value="Vanilluxe"/>
+            <StringItem index="100" value="Deerling"/>
+            <StringItem index="101" value="Sawsbuck"/>
+            <StringItem index="102" value="Emolga"/>
+            <StringItem index="103" value="Karrablast"/>
+            <StringItem index="104" value="Escavalier"/>
+            <StringItem index="105" value="Foongus"/>
+            <StringItem index="106" value="Amoonguss"/>
+            <StringItem index="107" value="Frillish"/>
+            <StringItem index="108" value="Jellicent"/>
+            <StringItem index="109" value="Alomomola"/>
+            <StringItem index="110" value="Joltik"/>
+            <StringItem index="111" value="Galvantula"/>
+            <StringItem index="112" value="Ferroseed"/>
+            <StringItem index="113" value="Ferrothorn"/>
+            <StringItem index="114" value="Klink"/>
+            <StringItem index="115" value="Klang"/>
+            <StringItem index="116" value="Klinklang"/>
+            <StringItem index="117" value="Tynamo"/>
+            <StringItem index="118" value="Eelektrik"/>
+            <StringItem index="119" value="Eelektross"/>
+            <StringItem index="120" value="Elgyem"/>
+            <StringItem index="121" value="Beheeyem"/>
+            <StringItem index="122" value="Litwick"/>
+            <StringItem index="123" value="Lampent"/>
+            <StringItem index="124" value="Chandelure"/>
+            <StringItem index="125" value="Axew"/>
+            <StringItem index="126" value="Fraxure"/>
+            <StringItem index="127" value="Haxorus"/>
+            <StringItem index="128" value="Cubchoo"/>
+            <StringItem index="129" value="Beartic"/>
+            <StringItem index="130" value="Cryogonal"/>
+            <StringItem index="131" value="Shelmet"/>
+            <StringItem index="132" value="Accelgor"/>
+            <StringItem index="133" value="Stunfisk"/>
+            <StringItem index="134" value="Mienfoo"/>
+            <StringItem index="135" value="Mienshao"/>
+            <StringItem index="136" value="Druddigon"/>
+            <StringItem index="137" value="Golett"/>
+            <StringItem index="138" value="Golurk"/>
+            <StringItem index="139" value="Pawniard"/>
+            <StringItem index="140" value="Bisharp"/>
+            <StringItem index="141" value="Bouffalant"/>
+            <StringItem index="142" value="Rufflet"/>
+            <StringItem index="143" value="Braviary"/>
+            <StringItem index="144" value="Vullaby"/>
+            <StringItem index="145" value="Mandibuzz"/>
+            <StringItem index="146" value="Heatmor"/>
+            <StringItem index="147" value="Durant"/>
+            <StringItem index="148" value="Deino"/>
+            <StringItem index="149" value="Zweilous"/>
+            <StringItem index="150" value="Hydreigon"/>
+            <StringItem index="151" value="Larvesta"/>
+            <StringItem index="152" value="Volcarona"/>
+            <StringItem index="153" value="Cobalion"/>
+            <StringItem index="154" value="Terrakion"/>
+            <StringItem index="155" value="Virizion"/>
+            <StringItem index="156" value="Tornadus"/>
+            <StringItem index="157" value="Thundurus"/>
+            <StringItem index="158" value="Reshiram"/>
+            <StringItem index="159" value="Zekrom"/>
+            <StringItem index="160" value="Landorus"/>
+            <StringItem index="161" value="Kyurem"/>
+            <StringItem index="162" value="Keldeo"/>
+            <StringItem index="163" value="Meloetta"/>
+            <StringItem index="164" value="Genesect"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="310" y="350" width="120" height="40"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="poke3">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="165">
+            <StringItem index="0" value="------x------"/>
+            <StringItem index="1" value="Eevee"/>
+            <StringItem index="2" value="Vaporeon"/>
+            <StringItem index="3" value="Jolteon"/>
+            <StringItem index="4" value="Flareon"/>
+            <StringItem index="5" value="Espeon"/>
+            <StringItem index="6" value="Umbreon"/>
+            <StringItem index="7" value="Leafeon"/>
+            <StringItem index="8" value="Glaceon"/>
+            <StringItem index="9" value="Sylveon"/>
+            <StringItem index="10" value="Snivy"/>
+            <StringItem index="11" value="Servine"/>
+            <StringItem index="12" value="Serperior"/>
+            <StringItem index="13" value="Tepig"/>
+            <StringItem index="14" value="Pignite"/>
+            <StringItem index="15" value="Emboar"/>
+            <StringItem index="16" value="Oshawott"/>
+            <StringItem index="17" value="Dewott"/>
+            <StringItem index="18" value="Samurott"/>
+            <StringItem index="19" value="Patrat"/>
+            <StringItem index="20" value="Watchog"/>
+            <StringItem index="21" value="Lillipup"/>
+            <StringItem index="22" value="Herdier"/>
+            <StringItem index="23" value="Stoutland"/>
+            <StringItem index="24" value="Purrloin"/>
+            <StringItem index="25" value="Liepard"/>
+            <StringItem index="26" value="Pansage"/>
+            <StringItem index="27" value="Simisage"/>
+            <StringItem index="28" value="Pansear"/>
+            <StringItem index="29" value="Simisear"/>
+            <StringItem index="30" value="Panpour"/>
+            <StringItem index="31" value="Simipour"/>
+            <StringItem index="32" value="Munna"/>
+            <StringItem index="33" value="Musharna"/>
+            <StringItem index="34" value="Pidove"/>
+            <StringItem index="35" value="Tranquill"/>
+            <StringItem index="36" value="Unfezant"/>
+            <StringItem index="37" value="Blitzle"/>
+            <StringItem index="38" value="Zebstrika"/>
+            <StringItem index="39" value="Roggenrola"/>
+            <StringItem index="40" value="Boldore"/>
+            <StringItem index="41" value="Gigalith"/>
+            <StringItem index="42" value="Woobat"/>
+            <StringItem index="43" value="Swoobat"/>
+            <StringItem index="44" value="Drilbur"/>
+            <StringItem index="45" value="Excadrill"/>
+            <StringItem index="46" value="Audino"/>
+            <StringItem index="47" value="Timburr"/>
+            <StringItem index="48" value="Gurdurr"/>
+            <StringItem index="49" value="Conkeldurr"/>
+            <StringItem index="50" value="Tympole"/>
+            <StringItem index="51" value="Palpitoad"/>
+            <StringItem index="52" value="Seismitoad"/>
+            <StringItem index="53" value="Throh"/>
+            <StringItem index="54" value="Sawk"/>
+            <StringItem index="55" value="Sewaddle"/>
+            <StringItem index="56" value="Swadloon"/>
+            <StringItem index="57" value="Leavanny"/>
+            <StringItem index="58" value="Venipede"/>
+            <StringItem index="59" value="Whirlipede"/>
+            <StringItem index="60" value="Scolipede"/>
+            <StringItem index="61" value="Cottonee"/>
+            <StringItem index="62" value="Whimsicott"/>
+            <StringItem index="63" value="Petilil"/>
+            <StringItem index="64" value="Lilligant"/>
+            <StringItem index="65" value="Basculin"/>
+            <StringItem index="66" value="Sandile"/>
+            <StringItem index="67" value="Krokorok"/>
+            <StringItem index="68" value="Krookodile"/>
+            <StringItem index="69" value="Darumaka"/>
+            <StringItem index="70" value="Darmanitan"/>
+            <StringItem index="71" value="Maractus"/>
+            <StringItem index="72" value="Dwebble"/>
+            <StringItem index="73" value="Crustle"/>
+            <StringItem index="74" value="Scraggy"/>
+            <StringItem index="75" value="Scrafty"/>
+            <StringItem index="76" value="Sigilyph"/>
+            <StringItem index="77" value="Yamask"/>
+            <StringItem index="78" value="Cofagrigus"/>
+            <StringItem index="79" value="Tirtouga"/>
+            <StringItem index="80" value="Carracosta"/>
+            <StringItem index="81" value="Archen"/>
+            <StringItem index="82" value="Archeops"/>
+            <StringItem index="83" value="Trubbish"/>
+            <StringItem index="84" value="Garbodor"/>
+            <StringItem index="85" value="Zorua"/>
+            <StringItem index="86" value="Zoroark"/>
+            <StringItem index="87" value="Minccino"/>
+            <StringItem index="88" value="Cinccino"/>
+            <StringItem index="89" value="Gothita"/>
+            <StringItem index="90" value="Gothorita"/>
+            <StringItem index="91" value="Gothitelle"/>
+            <StringItem index="92" value="Solosis"/>
+            <StringItem index="93" value="Duosion"/>
+            <StringItem index="94" value="Reuniclus"/>
+            <StringItem index="95" value="Ducklett"/>
+            <StringItem index="96" value="Swanna"/>
+            <StringItem index="97" value="Vanillite"/>
+            <StringItem index="98" value="Vanillish"/>
+            <StringItem index="99" value="Vanilluxe"/>
+            <StringItem index="100" value="Deerling"/>
+            <StringItem index="101" value="Sawsbuck"/>
+            <StringItem index="102" value="Emolga"/>
+            <StringItem index="103" value="Karrablast"/>
+            <StringItem index="104" value="Escavalier"/>
+            <StringItem index="105" value="Foongus"/>
+            <StringItem index="106" value="Amoonguss"/>
+            <StringItem index="107" value="Frillish"/>
+            <StringItem index="108" value="Jellicent"/>
+            <StringItem index="109" value="Alomomola"/>
+            <StringItem index="110" value="Joltik"/>
+            <StringItem index="111" value="Galvantula"/>
+            <StringItem index="112" value="Ferroseed"/>
+            <StringItem index="113" value="Ferrothorn"/>
+            <StringItem index="114" value="Klink"/>
+            <StringItem index="115" value="Klang"/>
+            <StringItem index="116" value="Klinklang"/>
+            <StringItem index="117" value="Tynamo"/>
+            <StringItem index="118" value="Eelektrik"/>
+            <StringItem index="119" value="Eelektross"/>
+            <StringItem index="120" value="Elgyem"/>
+            <StringItem index="121" value="Beheeyem"/>
+            <StringItem index="122" value="Litwick"/>
+            <StringItem index="123" value="Lampent"/>
+            <StringItem index="124" value="Chandelure"/>
+            <StringItem index="125" value="Axew"/>
+            <StringItem index="126" value="Fraxure"/>
+            <StringItem index="127" value="Haxorus"/>
+            <StringItem index="128" value="Cubchoo"/>
+            <StringItem index="129" value="Beartic"/>
+            <StringItem index="130" value="Cryogonal"/>
+            <StringItem index="131" value="Shelmet"/>
+            <StringItem index="132" value="Accelgor"/>
+            <StringItem index="133" value="Stunfisk"/>
+            <StringItem index="134" value="Mienfoo"/>
+            <StringItem index="135" value="Mienshao"/>
+            <StringItem index="136" value="Druddigon"/>
+            <StringItem index="137" value="Golett"/>
+            <StringItem index="138" value="Golurk"/>
+            <StringItem index="139" value="Pawniard"/>
+            <StringItem index="140" value="Bisharp"/>
+            <StringItem index="141" value="Bouffalant"/>
+            <StringItem index="142" value="Rufflet"/>
+            <StringItem index="143" value="Braviary"/>
+            <StringItem index="144" value="Vullaby"/>
+            <StringItem index="145" value="Mandibuzz"/>
+            <StringItem index="146" value="Heatmor"/>
+            <StringItem index="147" value="Durant"/>
+            <StringItem index="148" value="Deino"/>
+            <StringItem index="149" value="Zweilous"/>
+            <StringItem index="150" value="Hydreigon"/>
+            <StringItem index="151" value="Larvesta"/>
+            <StringItem index="152" value="Volcarona"/>
+            <StringItem index="153" value="Cobalion"/>
+            <StringItem index="154" value="Terrakion"/>
+            <StringItem index="155" value="Virizion"/>
+            <StringItem index="156" value="Tornadus"/>
+            <StringItem index="157" value="Thundurus"/>
+            <StringItem index="158" value="Reshiram"/>
+            <StringItem index="159" value="Zekrom"/>
+            <StringItem index="160" value="Landorus"/>
+            <StringItem index="161" value="Kyurem"/>
+            <StringItem index="162" value="Keldeo"/>
+            <StringItem index="163" value="Meloetta"/>
+            <StringItem index="164" value="Genesect"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="510" y="350" width="120" height="40"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="poke4">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="165">
+            <StringItem index="0" value="------x------"/>
+            <StringItem index="1" value="Eevee"/>
+            <StringItem index="2" value="Vaporeon"/>
+            <StringItem index="3" value="Jolteon"/>
+            <StringItem index="4" value="Flareon"/>
+            <StringItem index="5" value="Espeon"/>
+            <StringItem index="6" value="Umbreon"/>
+            <StringItem index="7" value="Leafeon"/>
+            <StringItem index="8" value="Glaceon"/>
+            <StringItem index="9" value="Sylveon"/>
+            <StringItem index="10" value="Snivy"/>
+            <StringItem index="11" value="Servine"/>
+            <StringItem index="12" value="Serperior"/>
+            <StringItem index="13" value="Tepig"/>
+            <StringItem index="14" value="Pignite"/>
+            <StringItem index="15" value="Emboar"/>
+            <StringItem index="16" value="Oshawott"/>
+            <StringItem index="17" value="Dewott"/>
+            <StringItem index="18" value="Samurott"/>
+            <StringItem index="19" value="Patrat"/>
+            <StringItem index="20" value="Watchog"/>
+            <StringItem index="21" value="Lillipup"/>
+            <StringItem index="22" value="Herdier"/>
+            <StringItem index="23" value="Stoutland"/>
+            <StringItem index="24" value="Purrloin"/>
+            <StringItem index="25" value="Liepard"/>
+            <StringItem index="26" value="Pansage"/>
+            <StringItem index="27" value="Simisage"/>
+            <StringItem index="28" value="Pansear"/>
+            <StringItem index="29" value="Simisear"/>
+            <StringItem index="30" value="Panpour"/>
+            <StringItem index="31" value="Simipour"/>
+            <StringItem index="32" value="Munna"/>
+            <StringItem index="33" value="Musharna"/>
+            <StringItem index="34" value="Pidove"/>
+            <StringItem index="35" value="Tranquill"/>
+            <StringItem index="36" value="Unfezant"/>
+            <StringItem index="37" value="Blitzle"/>
+            <StringItem index="38" value="Zebstrika"/>
+            <StringItem index="39" value="Roggenrola"/>
+            <StringItem index="40" value="Boldore"/>
+            <StringItem index="41" value="Gigalith"/>
+            <StringItem index="42" value="Woobat"/>
+            <StringItem index="43" value="Swoobat"/>
+            <StringItem index="44" value="Drilbur"/>
+            <StringItem index="45" value="Excadrill"/>
+            <StringItem index="46" value="Audino"/>
+            <StringItem index="47" value="Timburr"/>
+            <StringItem index="48" value="Gurdurr"/>
+            <StringItem index="49" value="Conkeldurr"/>
+            <StringItem index="50" value="Tympole"/>
+            <StringItem index="51" value="Palpitoad"/>
+            <StringItem index="52" value="Seismitoad"/>
+            <StringItem index="53" value="Throh"/>
+            <StringItem index="54" value="Sawk"/>
+            <StringItem index="55" value="Sewaddle"/>
+            <StringItem index="56" value="Swadloon"/>
+            <StringItem index="57" value="Leavanny"/>
+            <StringItem index="58" value="Venipede"/>
+            <StringItem index="59" value="Whirlipede"/>
+            <StringItem index="60" value="Scolipede"/>
+            <StringItem index="61" value="Cottonee"/>
+            <StringItem index="62" value="Whimsicott"/>
+            <StringItem index="63" value="Petilil"/>
+            <StringItem index="64" value="Lilligant"/>
+            <StringItem index="65" value="Basculin"/>
+            <StringItem index="66" value="Sandile"/>
+            <StringItem index="67" value="Krokorok"/>
+            <StringItem index="68" value="Krookodile"/>
+            <StringItem index="69" value="Darumaka"/>
+            <StringItem index="70" value="Darmanitan"/>
+            <StringItem index="71" value="Maractus"/>
+            <StringItem index="72" value="Dwebble"/>
+            <StringItem index="73" value="Crustle"/>
+            <StringItem index="74" value="Scraggy"/>
+            <StringItem index="75" value="Scrafty"/>
+            <StringItem index="76" value="Sigilyph"/>
+            <StringItem index="77" value="Yamask"/>
+            <StringItem index="78" value="Cofagrigus"/>
+            <StringItem index="79" value="Tirtouga"/>
+            <StringItem index="80" value="Carracosta"/>
+            <StringItem index="81" value="Archen"/>
+            <StringItem index="82" value="Archeops"/>
+            <StringItem index="83" value="Trubbish"/>
+            <StringItem index="84" value="Garbodor"/>
+            <StringItem index="85" value="Zorua"/>
+            <StringItem index="86" value="Zoroark"/>
+            <StringItem index="87" value="Minccino"/>
+            <StringItem index="88" value="Cinccino"/>
+            <StringItem index="89" value="Gothita"/>
+            <StringItem index="90" value="Gothorita"/>
+            <StringItem index="91" value="Gothitelle"/>
+            <StringItem index="92" value="Solosis"/>
+            <StringItem index="93" value="Duosion"/>
+            <StringItem index="94" value="Reuniclus"/>
+            <StringItem index="95" value="Ducklett"/>
+            <StringItem index="96" value="Swanna"/>
+            <StringItem index="97" value="Vanillite"/>
+            <StringItem index="98" value="Vanillish"/>
+            <StringItem index="99" value="Vanilluxe"/>
+            <StringItem index="100" value="Deerling"/>
+            <StringItem index="101" value="Sawsbuck"/>
+            <StringItem index="102" value="Emolga"/>
+            <StringItem index="103" value="Karrablast"/>
+            <StringItem index="104" value="Escavalier"/>
+            <StringItem index="105" value="Foongus"/>
+            <StringItem index="106" value="Amoonguss"/>
+            <StringItem index="107" value="Frillish"/>
+            <StringItem index="108" value="Jellicent"/>
+            <StringItem index="109" value="Alomomola"/>
+            <StringItem index="110" value="Joltik"/>
+            <StringItem index="111" value="Galvantula"/>
+            <StringItem index="112" value="Ferroseed"/>
+            <StringItem index="113" value="Ferrothorn"/>
+            <StringItem index="114" value="Klink"/>
+            <StringItem index="115" value="Klang"/>
+            <StringItem index="116" value="Klinklang"/>
+            <StringItem index="117" value="Tynamo"/>
+            <StringItem index="118" value="Eelektrik"/>
+            <StringItem index="119" value="Eelektross"/>
+            <StringItem index="120" value="Elgyem"/>
+            <StringItem index="121" value="Beheeyem"/>
+            <StringItem index="122" value="Litwick"/>
+            <StringItem index="123" value="Lampent"/>
+            <StringItem index="124" value="Chandelure"/>
+            <StringItem index="125" value="Axew"/>
+            <StringItem index="126" value="Fraxure"/>
+            <StringItem index="127" value="Haxorus"/>
+            <StringItem index="128" value="Cubchoo"/>
+            <StringItem index="129" value="Beartic"/>
+            <StringItem index="130" value="Cryogonal"/>
+            <StringItem index="131" value="Shelmet"/>
+            <StringItem index="132" value="Accelgor"/>
+            <StringItem index="133" value="Stunfisk"/>
+            <StringItem index="134" value="Mienfoo"/>
+            <StringItem index="135" value="Mienshao"/>
+            <StringItem index="136" value="Druddigon"/>
+            <StringItem index="137" value="Golett"/>
+            <StringItem index="138" value="Golurk"/>
+            <StringItem index="139" value="Pawniard"/>
+            <StringItem index="140" value="Bisharp"/>
+            <StringItem index="141" value="Bouffalant"/>
+            <StringItem index="142" value="Rufflet"/>
+            <StringItem index="143" value="Braviary"/>
+            <StringItem index="144" value="Vullaby"/>
+            <StringItem index="145" value="Mandibuzz"/>
+            <StringItem index="146" value="Heatmor"/>
+            <StringItem index="147" value="Durant"/>
+            <StringItem index="148" value="Deino"/>
+            <StringItem index="149" value="Zweilous"/>
+            <StringItem index="150" value="Hydreigon"/>
+            <StringItem index="151" value="Larvesta"/>
+            <StringItem index="152" value="Volcarona"/>
+            <StringItem index="153" value="Cobalion"/>
+            <StringItem index="154" value="Terrakion"/>
+            <StringItem index="155" value="Virizion"/>
+            <StringItem index="156" value="Tornadus"/>
+            <StringItem index="157" value="Thundurus"/>
+            <StringItem index="158" value="Reshiram"/>
+            <StringItem index="159" value="Zekrom"/>
+            <StringItem index="160" value="Landorus"/>
+            <StringItem index="161" value="Kyurem"/>
+            <StringItem index="162" value="Keldeo"/>
+            <StringItem index="163" value="Meloetta"/>
+            <StringItem index="164" value="Genesect"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="110" y="450" width="120" height="40"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="poke5">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="165">
+            <StringItem index="0" value="------x------"/>
+            <StringItem index="1" value="Eevee"/>
+            <StringItem index="2" value="Vaporeon"/>
+            <StringItem index="3" value="Jolteon"/>
+            <StringItem index="4" value="Flareon"/>
+            <StringItem index="5" value="Espeon"/>
+            <StringItem index="6" value="Umbreon"/>
+            <StringItem index="7" value="Leafeon"/>
+            <StringItem index="8" value="Glaceon"/>
+            <StringItem index="9" value="Sylveon"/>
+            <StringItem index="10" value="Snivy"/>
+            <StringItem index="11" value="Servine"/>
+            <StringItem index="12" value="Serperior"/>
+            <StringItem index="13" value="Tepig"/>
+            <StringItem index="14" value="Pignite"/>
+            <StringItem index="15" value="Emboar"/>
+            <StringItem index="16" value="Oshawott"/>
+            <StringItem index="17" value="Dewott"/>
+            <StringItem index="18" value="Samurott"/>
+            <StringItem index="19" value="Patrat"/>
+            <StringItem index="20" value="Watchog"/>
+            <StringItem index="21" value="Lillipup"/>
+            <StringItem index="22" value="Herdier"/>
+            <StringItem index="23" value="Stoutland"/>
+            <StringItem index="24" value="Purrloin"/>
+            <StringItem index="25" value="Liepard"/>
+            <StringItem index="26" value="Pansage"/>
+            <StringItem index="27" value="Simisage"/>
+            <StringItem index="28" value="Pansear"/>
+            <StringItem index="29" value="Simisear"/>
+            <StringItem index="30" value="Panpour"/>
+            <StringItem index="31" value="Simipour"/>
+            <StringItem index="32" value="Munna"/>
+            <StringItem index="33" value="Musharna"/>
+            <StringItem index="34" value="Pidove"/>
+            <StringItem index="35" value="Tranquill"/>
+            <StringItem index="36" value="Unfezant"/>
+            <StringItem index="37" value="Blitzle"/>
+            <StringItem index="38" value="Zebstrika"/>
+            <StringItem index="39" value="Roggenrola"/>
+            <StringItem index="40" value="Boldore"/>
+            <StringItem index="41" value="Gigalith"/>
+            <StringItem index="42" value="Woobat"/>
+            <StringItem index="43" value="Swoobat"/>
+            <StringItem index="44" value="Drilbur"/>
+            <StringItem index="45" value="Excadrill"/>
+            <StringItem index="46" value="Audino"/>
+            <StringItem index="47" value="Timburr"/>
+            <StringItem index="48" value="Gurdurr"/>
+            <StringItem index="49" value="Conkeldurr"/>
+            <StringItem index="50" value="Tympole"/>
+            <StringItem index="51" value="Palpitoad"/>
+            <StringItem index="52" value="Seismitoad"/>
+            <StringItem index="53" value="Throh"/>
+            <StringItem index="54" value="Sawk"/>
+            <StringItem index="55" value="Sewaddle"/>
+            <StringItem index="56" value="Swadloon"/>
+            <StringItem index="57" value="Leavanny"/>
+            <StringItem index="58" value="Venipede"/>
+            <StringItem index="59" value="Whirlipede"/>
+            <StringItem index="60" value="Scolipede"/>
+            <StringItem index="61" value="Cottonee"/>
+            <StringItem index="62" value="Whimsicott"/>
+            <StringItem index="63" value="Petilil"/>
+            <StringItem index="64" value="Lilligant"/>
+            <StringItem index="65" value="Basculin"/>
+            <StringItem index="66" value="Sandile"/>
+            <StringItem index="67" value="Krokorok"/>
+            <StringItem index="68" value="Krookodile"/>
+            <StringItem index="69" value="Darumaka"/>
+            <StringItem index="70" value="Darmanitan"/>
+            <StringItem index="71" value="Maractus"/>
+            <StringItem index="72" value="Dwebble"/>
+            <StringItem index="73" value="Crustle"/>
+            <StringItem index="74" value="Scraggy"/>
+            <StringItem index="75" value="Scrafty"/>
+            <StringItem index="76" value="Sigilyph"/>
+            <StringItem index="77" value="Yamask"/>
+            <StringItem index="78" value="Cofagrigus"/>
+            <StringItem index="79" value="Tirtouga"/>
+            <StringItem index="80" value="Carracosta"/>
+            <StringItem index="81" value="Archen"/>
+            <StringItem index="82" value="Archeops"/>
+            <StringItem index="83" value="Trubbish"/>
+            <StringItem index="84" value="Garbodor"/>
+            <StringItem index="85" value="Zorua"/>
+            <StringItem index="86" value="Zoroark"/>
+            <StringItem index="87" value="Minccino"/>
+            <StringItem index="88" value="Cinccino"/>
+            <StringItem index="89" value="Gothita"/>
+            <StringItem index="90" value="Gothorita"/>
+            <StringItem index="91" value="Gothitelle"/>
+            <StringItem index="92" value="Solosis"/>
+            <StringItem index="93" value="Duosion"/>
+            <StringItem index="94" value="Reuniclus"/>
+            <StringItem index="95" value="Ducklett"/>
+            <StringItem index="96" value="Swanna"/>
+            <StringItem index="97" value="Vanillite"/>
+            <StringItem index="98" value="Vanillish"/>
+            <StringItem index="99" value="Vanilluxe"/>
+            <StringItem index="100" value="Deerling"/>
+            <StringItem index="101" value="Sawsbuck"/>
+            <StringItem index="102" value="Emolga"/>
+            <StringItem index="103" value="Karrablast"/>
+            <StringItem index="104" value="Escavalier"/>
+            <StringItem index="105" value="Foongus"/>
+            <StringItem index="106" value="Amoonguss"/>
+            <StringItem index="107" value="Frillish"/>
+            <StringItem index="108" value="Jellicent"/>
+            <StringItem index="109" value="Alomomola"/>
+            <StringItem index="110" value="Joltik"/>
+            <StringItem index="111" value="Galvantula"/>
+            <StringItem index="112" value="Ferroseed"/>
+            <StringItem index="113" value="Ferrothorn"/>
+            <StringItem index="114" value="Klink"/>
+            <StringItem index="115" value="Klang"/>
+            <StringItem index="116" value="Klinklang"/>
+            <StringItem index="117" value="Tynamo"/>
+            <StringItem index="118" value="Eelektrik"/>
+            <StringItem index="119" value="Eelektross"/>
+            <StringItem index="120" value="Elgyem"/>
+            <StringItem index="121" value="Beheeyem"/>
+            <StringItem index="122" value="Litwick"/>
+            <StringItem index="123" value="Lampent"/>
+            <StringItem index="124" value="Chandelure"/>
+            <StringItem index="125" value="Axew"/>
+            <StringItem index="126" value="Fraxure"/>
+            <StringItem index="127" value="Haxorus"/>
+            <StringItem index="128" value="Cubchoo"/>
+            <StringItem index="129" value="Beartic"/>
+            <StringItem index="130" value="Cryogonal"/>
+            <StringItem index="131" value="Shelmet"/>
+            <StringItem index="132" value="Accelgor"/>
+            <StringItem index="133" value="Stunfisk"/>
+            <StringItem index="134" value="Mienfoo"/>
+            <StringItem index="135" value="Mienshao"/>
+            <StringItem index="136" value="Druddigon"/>
+            <StringItem index="137" value="Golett"/>
+            <StringItem index="138" value="Golurk"/>
+            <StringItem index="139" value="Pawniard"/>
+            <StringItem index="140" value="Bisharp"/>
+            <StringItem index="141" value="Bouffalant"/>
+            <StringItem index="142" value="Rufflet"/>
+            <StringItem index="143" value="Braviary"/>
+            <StringItem index="144" value="Vullaby"/>
+            <StringItem index="145" value="Mandibuzz"/>
+            <StringItem index="146" value="Heatmor"/>
+            <StringItem index="147" value="Durant"/>
+            <StringItem index="148" value="Deino"/>
+            <StringItem index="149" value="Zweilous"/>
+            <StringItem index="150" value="Hydreigon"/>
+            <StringItem index="151" value="Larvesta"/>
+            <StringItem index="152" value="Volcarona"/>
+            <StringItem index="153" value="Cobalion"/>
+            <StringItem index="154" value="Terrakion"/>
+            <StringItem index="155" value="Virizion"/>
+            <StringItem index="156" value="Tornadus"/>
+            <StringItem index="157" value="Thundurus"/>
+            <StringItem index="158" value="Reshiram"/>
+            <StringItem index="159" value="Zekrom"/>
+            <StringItem index="160" value="Landorus"/>
+            <StringItem index="161" value="Kyurem"/>
+            <StringItem index="162" value="Keldeo"/>
+            <StringItem index="163" value="Meloetta"/>
+            <StringItem index="164" value="Genesect"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="310" y="450" width="120" height="40"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="poke6">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="165">
+            <StringItem index="0" value="------x------"/>
+            <StringItem index="1" value="Eevee"/>
+            <StringItem index="2" value="Vaporeon"/>
+            <StringItem index="3" value="Jolteon"/>
+            <StringItem index="4" value="Flareon"/>
+            <StringItem index="5" value="Espeon"/>
+            <StringItem index="6" value="Umbreon"/>
+            <StringItem index="7" value="Leafeon"/>
+            <StringItem index="8" value="Glaceon"/>
+            <StringItem index="9" value="Sylveon"/>
+            <StringItem index="10" value="Snivy"/>
+            <StringItem index="11" value="Servine"/>
+            <StringItem index="12" value="Serperior"/>
+            <StringItem index="13" value="Tepig"/>
+            <StringItem index="14" value="Pignite"/>
+            <StringItem index="15" value="Emboar"/>
+            <StringItem index="16" value="Oshawott"/>
+            <StringItem index="17" value="Dewott"/>
+            <StringItem index="18" value="Samurott"/>
+            <StringItem index="19" value="Patrat"/>
+            <StringItem index="20" value="Watchog"/>
+            <StringItem index="21" value="Lillipup"/>
+            <StringItem index="22" value="Herdier"/>
+            <StringItem index="23" value="Stoutland"/>
+            <StringItem index="24" value="Purrloin"/>
+            <StringItem index="25" value="Liepard"/>
+            <StringItem index="26" value="Pansage"/>
+            <StringItem index="27" value="Simisage"/>
+            <StringItem index="28" value="Pansear"/>
+            <StringItem index="29" value="Simisear"/>
+            <StringItem index="30" value="Panpour"/>
+            <StringItem index="31" value="Simipour"/>
+            <StringItem index="32" value="Munna"/>
+            <StringItem index="33" value="Musharna"/>
+            <StringItem index="34" value="Pidove"/>
+            <StringItem index="35" value="Tranquill"/>
+            <StringItem index="36" value="Unfezant"/>
+            <StringItem index="37" value="Blitzle"/>
+            <StringItem index="38" value="Zebstrika"/>
+            <StringItem index="39" value="Roggenrola"/>
+            <StringItem index="40" value="Boldore"/>
+            <StringItem index="41" value="Gigalith"/>
+            <StringItem index="42" value="Woobat"/>
+            <StringItem index="43" value="Swoobat"/>
+            <StringItem index="44" value="Drilbur"/>
+            <StringItem index="45" value="Excadrill"/>
+            <StringItem index="46" value="Audino"/>
+            <StringItem index="47" value="Timburr"/>
+            <StringItem index="48" value="Gurdurr"/>
+            <StringItem index="49" value="Conkeldurr"/>
+            <StringItem index="50" value="Tympole"/>
+            <StringItem index="51" value="Palpitoad"/>
+            <StringItem index="52" value="Seismitoad"/>
+            <StringItem index="53" value="Throh"/>
+            <StringItem index="54" value="Sawk"/>
+            <StringItem index="55" value="Sewaddle"/>
+            <StringItem index="56" value="Swadloon"/>
+            <StringItem index="57" value="Leavanny"/>
+            <StringItem index="58" value="Venipede"/>
+            <StringItem index="59" value="Whirlipede"/>
+            <StringItem index="60" value="Scolipede"/>
+            <StringItem index="61" value="Cottonee"/>
+            <StringItem index="62" value="Whimsicott"/>
+            <StringItem index="63" value="Petilil"/>
+            <StringItem index="64" value="Lilligant"/>
+            <StringItem index="65" value="Basculin"/>
+            <StringItem index="66" value="Sandile"/>
+            <StringItem index="67" value="Krokorok"/>
+            <StringItem index="68" value="Krookodile"/>
+            <StringItem index="69" value="Darumaka"/>
+            <StringItem index="70" value="Darmanitan"/>
+            <StringItem index="71" value="Maractus"/>
+            <StringItem index="72" value="Dwebble"/>
+            <StringItem index="73" value="Crustle"/>
+            <StringItem index="74" value="Scraggy"/>
+            <StringItem index="75" value="Scrafty"/>
+            <StringItem index="76" value="Sigilyph"/>
+            <StringItem index="77" value="Yamask"/>
+            <StringItem index="78" value="Cofagrigus"/>
+            <StringItem index="79" value="Tirtouga"/>
+            <StringItem index="80" value="Carracosta"/>
+            <StringItem index="81" value="Archen"/>
+            <StringItem index="82" value="Archeops"/>
+            <StringItem index="83" value="Trubbish"/>
+            <StringItem index="84" value="Garbodor"/>
+            <StringItem index="85" value="Zorua"/>
+            <StringItem index="86" value="Zoroark"/>
+            <StringItem index="87" value="Minccino"/>
+            <StringItem index="88" value="Cinccino"/>
+            <StringItem index="89" value="Gothita"/>
+            <StringItem index="90" value="Gothorita"/>
+            <StringItem index="91" value="Gothitelle"/>
+            <StringItem index="92" value="Solosis"/>
+            <StringItem index="93" value="Duosion"/>
+            <StringItem index="94" value="Reuniclus"/>
+            <StringItem index="95" value="Ducklett"/>
+            <StringItem index="96" value="Swanna"/>
+            <StringItem index="97" value="Vanillite"/>
+            <StringItem index="98" value="Vanillish"/>
+            <StringItem index="99" value="Vanilluxe"/>
+            <StringItem index="100" value="Deerling"/>
+            <StringItem index="101" value="Sawsbuck"/>
+            <StringItem index="102" value="Emolga"/>
+            <StringItem index="103" value="Karrablast"/>
+            <StringItem index="104" value="Escavalier"/>
+            <StringItem index="105" value="Foongus"/>
+            <StringItem index="106" value="Amoonguss"/>
+            <StringItem index="107" value="Frillish"/>
+            <StringItem index="108" value="Jellicent"/>
+            <StringItem index="109" value="Alomomola"/>
+            <StringItem index="110" value="Joltik"/>
+            <StringItem index="111" value="Galvantula"/>
+            <StringItem index="112" value="Ferroseed"/>
+            <StringItem index="113" value="Ferrothorn"/>
+            <StringItem index="114" value="Klink"/>
+            <StringItem index="115" value="Klang"/>
+            <StringItem index="116" value="Klinklang"/>
+            <StringItem index="117" value="Tynamo"/>
+            <StringItem index="118" value="Eelektrik"/>
+            <StringItem index="119" value="Eelektross"/>
+            <StringItem index="120" value="Elgyem"/>
+            <StringItem index="121" value="Beheeyem"/>
+            <StringItem index="122" value="Litwick"/>
+            <StringItem index="123" value="Lampent"/>
+            <StringItem index="124" value="Chandelure"/>
+            <StringItem index="125" value="Axew"/>
+            <StringItem index="126" value="Fraxure"/>
+            <StringItem index="127" value="Haxorus"/>
+            <StringItem index="128" value="Cubchoo"/>
+            <StringItem index="129" value="Beartic"/>
+            <StringItem index="130" value="Cryogonal"/>
+            <StringItem index="131" value="Shelmet"/>
+            <StringItem index="132" value="Accelgor"/>
+            <StringItem index="133" value="Stunfisk"/>
+            <StringItem index="134" value="Mienfoo"/>
+            <StringItem index="135" value="Mienshao"/>
+            <StringItem index="136" value="Druddigon"/>
+            <StringItem index="137" value="Golett"/>
+            <StringItem index="138" value="Golurk"/>
+            <StringItem index="139" value="Pawniard"/>
+            <StringItem index="140" value="Bisharp"/>
+            <StringItem index="141" value="Bouffalant"/>
+            <StringItem index="142" value="Rufflet"/>
+            <StringItem index="143" value="Braviary"/>
+            <StringItem index="144" value="Vullaby"/>
+            <StringItem index="145" value="Mandibuzz"/>
+            <StringItem index="146" value="Heatmor"/>
+            <StringItem index="147" value="Durant"/>
+            <StringItem index="148" value="Deino"/>
+            <StringItem index="149" value="Zweilous"/>
+            <StringItem index="150" value="Hydreigon"/>
+            <StringItem index="151" value="Larvesta"/>
+            <StringItem index="152" value="Volcarona"/>
+            <StringItem index="153" value="Cobalion"/>
+            <StringItem index="154" value="Terrakion"/>
+            <StringItem index="155" value="Virizion"/>
+            <StringItem index="156" value="Tornadus"/>
+            <StringItem index="157" value="Thundurus"/>
+            <StringItem index="158" value="Reshiram"/>
+            <StringItem index="159" value="Zekrom"/>
+            <StringItem index="160" value="Landorus"/>
+            <StringItem index="161" value="Kyurem"/>
+            <StringItem index="162" value="Keldeo"/>
+            <StringItem index="163" value="Meloetta"/>
+            <StringItem index="164" value="Genesect"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="510" y="450" width="120" height="40"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Imagens/PokeBackground.jpg"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="0" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox1">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="640" y="180" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox2">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="700" y="190" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox3">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="700" y="230" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+  </SubComponents>
+</Form>
