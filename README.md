@@ -49,3 +49,22 @@ Fique à vontade para contribuir com melhorias! Para isso:
 ## Licença
 Este projeto está sob a licença [MIT](LICENSE).
 
+## Imagens do Projeto
+
+### Menu Principal
+![Menu Principal](Images/Menu.png)
+
+### Tela de Criação
+![Tela de Criação](Images/Create.png)
+
+### Tela de Atualização
+![Tela de Atualização](Images/Update.png)
+
+### Tela de Leitura
+![Tela de Leitura](Images/Read.png)
+
+### Tela de Visualização
+![Tela de Visualização](Images/View.png)
+
+### Tela de Exclusão
+![Tela de Exclusão](Images/Delete.png)
