@@ -205,7 +205,7 @@ public class Cadastro extends javax.swing.JFrame {
     String password = new String(txtSenha.getPassword());
 
     try {
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/TrainerCards", "root", "Victor456");
+Connection conn = DriverManager.getConnection("jdbc:sqlite:trainercards.db");
         Statement stmt = conn.createStatement();
 
         // Check if the username already exists
@@ -439,7 +439,7 @@ case "Genesect": poke[i] = 649; break;
         
         
         // Register the new user
-        String insertQuery = "INSERT INTO trainers (tid, trainerName, trainerPass, trainerClass, cardCollor, pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6) VALUES ('" +tid+ "','" +trainername+ "', '" +password+ "','" +trainerSprite+ "','" +cor+ "', '" + poke[0]+ "', '" + poke[1]+ "', '" + poke[2]+ "', '" + poke[3]+ "', '" + poke[4]+ "', '" + poke[5]+ "')";
+        String insertQuery = "INSERT INTO trainers (tid, trainerName, trainerPass, trainerClass, cardColor, pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6) VALUES ('" +tid+ "','" +trainername+ "', '" +password+ "','" +trainerSprite+ "','" +cor+ "', '" + poke[0]+ "', '" + poke[1]+ "', '" + poke[2]+ "', '" + poke[3]+ "', '" + poke[4]+ "', '" + poke[5]+ "')";
         int rowsAffected = stmt.executeUpdate(insertQuery);
 
         if (rowsAffected > 0) {

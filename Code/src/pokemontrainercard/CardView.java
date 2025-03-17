@@ -23,12 +23,12 @@ public class CardView extends javax.swing.JFrame {
      */
     public CardView() {
         initComponents();
-        String Trainername = loginInBetween.getLoginId();
+        String Trainername = DatabaseConnection.getLoginId();
         lblTrainerName.setText(Trainername);
         int[] TeamMember = new int[6];
         String[] SpritePath =  new String[6];
         try{
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/TrainerCards","root","Victor456");
+Connection conn = DriverManager.getConnection("jdbc:sqlite:trainercards.db");
             Statement stmt = conn.createStatement();
             
             String checkname = "SELECT * FROM trainers WHERE trainerName = '"+Trainername+"' ";
@@ -52,7 +52,7 @@ public class CardView extends javax.swing.JFrame {
             poke5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PokeSprites/"+SpritePath[4]+"")));
             poke6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/PokeSprites/"+SpritePath[5]+"")));
                 
-            int cor = dadosTreinador.getInt("cardCollor");   
+            int cor = dadosTreinador.getInt("cardColor");   
             String corcard = String.valueOf("cardBackground"+cor+".png");
             fundoCard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CardBackgrounds/"+corcard+"")));
             if(cor == 3 || cor == 4 || cor == 2 || cor == 1){

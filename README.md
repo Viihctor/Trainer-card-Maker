@@ -26,17 +26,34 @@ PokemonTrainerCard/
 |   |   |-- Login.java, Menu.java  # Interface de login e menu
 |   |   |-- Cadastro.java, Atualizar.java, Apagar.java  # Gestão de dados
 |   |   |-- CardView.java  # Visualização dos cartões
+|   |   |-- DatabaseConnection.java  # Gerenciamento centralizado do banco de dados
 |   |-- Imagens, PokeSprites, Trainers, etc.  # Recursos visuais
-
 ```
 
 ## Como Executar
+### Compilando
 1. **Clone o repositório**
    ```sh
    git clone https://github.com/Viihctor/Trainer-card-Maker.git
    ```
 2. **Abra o projeto no NetBeans**
 3. **Compile e execute a classe principal** (`PokemonTrainerCard.java`)
+
+
+### Pré Compilado
+1. **Na pasta Dist há um jar executavel para o teste do protótipo**
+
+
+
+## Aplicando o Padrão Singleton (Entrega 16/03)
+Para melhorar a eficiência e segurança do acesso ao banco de dados, aplicamos o padrão **Singleton** na classe `DatabaseConnection`. Agora, todas as operações de banco de dados (CRUD) são centralizadas nessa classe, garantindo que apenas uma instância da conexão seja utilizada durante a execução da aplicação.
+
+### Benefícios da Mudança:
+- **Evita a criação excessiva de conexões** com o banco de dados.
+- **Facilita a manutenção** do código ao concentrar as operações SQL em um único local.
+- **Melhora a segurança** ao restringir o acesso direto ao banco de dados.
+
+Agora, qualquer classe que precisar interagir com o banco de dados pode chamar os métodos estáticos da `DatabaseConnection`, garantindo um acesso mais eficiente e organizado aos dados.
 
 ## Contribuição
 Fique à vontade para contribuir com melhorias! Para isso:

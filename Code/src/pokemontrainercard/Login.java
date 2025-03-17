@@ -98,27 +98,28 @@ public class Login extends javax.swing.JFrame {
 
     private void btnVerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerActionPerformed
         // Codigo do botão Visualizar:
-        String userid = idTreinador.getText();
-          String nomeTreinador = idTreinador.getText();
-        try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/TrainerCards", "root", "Victor456");
-            Statement stmt = conn.createStatement();
-            
-            String select = "SELECT * FROM trainers WHERE trainername = '"+ nomeTreinador +"'";
-            ResultSet checaNome = stmt.executeQuery(select);
-        if(checaNome.next()){
-                loginInBetween.setLoginId(nomeTreinador);
-            new CardView().setVisible(true);
-            dispose();
-        }else {
-            JOptionPane.showMessageDialog(this, "Nome de treinador não encontrado!");
-        }   
-            
-            
-        }catch(Exception e){
-            JOptionPane.showMessageDialog(this, "Erro conectando com o banco de dados: " + e.getMessage());
-        }
-        
+String nomeTreinador = idTreinador.getText();
+
+try {
+Connection conn = DriverManager.getConnection("jdbc:sqlite:trainercards.db");
+    String select = "SELECT * FROM trainers WHERE trainerName = ?";
+    
+    PreparedStatement pstmt = conn.prepareStatement(select);
+    pstmt.setString(1, nomeTreinador);
+    
+    ResultSet checaNome = pstmt.executeQuery();
+
+    if (checaNome.next()) {
+        DatabaseConnection.setLoginId(nomeTreinador);
+        new CardView().setVisible(true);
+        dispose();
+    } else {
+        JOptionPane.showMessageDialog(this, "Nome de treinador não encontrado!");
+    }
+
+} catch (Exception e) {
+    JOptionPane.showMessageDialog(this, "Erro conectando com o banco de dados: " + e.getMessage());
+}
         
          
         
