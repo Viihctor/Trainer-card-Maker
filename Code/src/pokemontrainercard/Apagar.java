@@ -108,7 +108,7 @@ public class Apagar extends javax.swing.JFrame {
     String password = new String(txtSenha.getPassword());
 
     try {
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/TrainerCards", "root", "Victor456");
+Connection conn = DriverManager.getConnection("jdbc:sqlite:trainercards.db");
         Statement stmt = conn.createStatement();
 
         // Check if the username already exists

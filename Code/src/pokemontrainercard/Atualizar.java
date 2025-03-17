@@ -206,7 +206,7 @@ public class Atualizar extends javax.swing.JFrame {
     String password = new String(txtSenha.getPassword());
 
     try {
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/TrainerCards", "root", "Victor456");
+Connection conn = DriverManager.getConnection("jdbc:sqlite:trainercards.db");
         Statement stmt = conn.createStatement();
 
         // Check if the username already exists
@@ -293,13 +293,13 @@ public class Atualizar extends javax.swing.JFrame {
         
         
         // Register the new user
-        String insertQuery = "UPDATE trainers SET trainerClass = '"+trainerSprite+"', cardCollor = '"+cor+"', pokemon1 = '"+poke[0]+"', pokemon2 = '"+poke[1]+"', pokemon3 = '"+poke[2]+"', pokemon4 = '"+poke[3]+"', pokemon5 = '"+poke[4]+"', pokemon6 = '"+poke[5]+"' WHERE trainerName = '"+trainername+"';";
+        String insertQuery = "UPDATE trainers SET trainerClass = '"+trainerSprite+"', cardColor = '"+cor+"', pokemon1 = '"+poke[0]+"', pokemon2 = '"+poke[1]+"', pokemon3 = '"+poke[2]+"', pokemon4 = '"+poke[3]+"', pokemon5 = '"+poke[4]+"', pokemon6 = '"+poke[5]+"' WHERE trainerName = '"+trainername+"';";
         int rowsAffected = stmt.executeUpdate(insertQuery);
 
         
         if (rowsAffected > 0) {
             JOptionPane.showMessageDialog(this, "Atualização completa!");
-            
+            conn.close();
             // Perform further actions or open a new window
         } else {
             JOptionPane.showMessageDialog(this, "Registro falhou!");
