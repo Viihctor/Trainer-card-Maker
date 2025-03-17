@@ -1,6 +1,6 @@
 # Trainer-card-Maker
 # Pokemon Trainer Card
-
+## Victor Lucas Tornelli
 Este projeto, **Pokemon Trainer Card**, é uma aplicação desenvolvida em **Java** que permite aos usuários criarem e gerenciarem seus próprios cartões de treinador Pokémon. Ele conta com uma interface gráfica intuitiva e funcionalidades como login, cadastro e gestão de cartões.
 
 ## Funcionalidades
